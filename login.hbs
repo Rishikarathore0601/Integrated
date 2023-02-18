@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#fff;  
+    font-family:Arial, Helvetica, sans-serif ;  
+}  
+
+.login{  
+        display:block;
+        width: 500px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background:#fff; 
+        border-color: black; 
+        border-radius: 7px ;
+        box-sizing:border-box; 
+        box-shadow: 0rem 0rem 1rem rgba(128, 128, 128, 0.897); 
+      
+          
+}
+h1{
+    text-align: center;  
+    color:black;  
+    padding: 20px;
+}  
+h2{  
+    text-align: center;  
+    color:dodgerblue;  
+    padding: 20px;  
+}  
+h5{
+    text-align: right;
+    float: inline-end;
+    color: dodgerblue;
+}
+label{  
+    color:black;  
+    font-size: 17px;  
+}  
+#email{  
+    width: 300px;  
+    height: 30px;  
+    border: 1px solid rgb(146, 145, 145);  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#password{  
+    width: 300px;  
+    height: 30px;  
+   border: 1px solid rgb(146, 145, 145);
+   border-color: black;
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: dodgerblue;
+    color: #fff;  
+  
+  
+} 
+a{  
+    float: inline-end;  
+   color: dodgerblue;  
+}
+ </style> 
+</head>
+<body>
+    <h2>  Deskala  - Assignment</h2>
+    <h1>Log in</h1>
+    <div class="login">
+    <form action="/login" id="login" method="post">
+    
+    <label>Email</label>
+   <br><br>
+    <input type="text" name="email" id="email" placeholder="Enter your Email">
+    <br><br>
+    <label>Password</label>
+    <br><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password">
+    <br>
+    <h5>Minimum 8 Alpha-numeric</h5>
+    <br>
+    <br>
+    <input type="submit" id="log" >
+
+    <br>
+    <br>
+    <br>
+    
+    </form>
+    <a href="/signup">Sign Up here</a>
+    </div>
+    
+</body>
+</html>

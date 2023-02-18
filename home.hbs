@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <section action="home">
+<a class="btn btn-secondary" href="/candidateEditAdd"> Create New</a> 
+ 
+<h3 align="left">Candidate List</h3>
+
+<table class="tables">
+<thead>
+<tr>
+<th>Name</th>
+<th>Date Of Birth</th>
+<th>E-mail</th>
+<th>Result</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+{{#each list}}
+<tr align="center">
+<td>{{this.Name}}</td>
+<td>{{this.DateOfBirth}}</td>
+<td>{{this.E-mail}}</td>
+<td>{{this.Result}}</td>
+<td>
+<a href="/course/{{this._id}}" class="fas fa-edit">  </a>
+<a href="/course/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"> Delete </a>
+</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+</section>
+</body>
+</html>
